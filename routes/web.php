@@ -9,6 +9,7 @@ use App\Http\Livewire\FullPage;
 use App\Http\Livewire\Properties;
 use App\Http\Livewire\Databinding;
 use App\Http\Livewire\Forms;
+use App\Http\Livewire\Loading;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,5 +39,7 @@ Route::get('/actions', Actions::class)->name('actions');
 Route::get('/banco', Banco::class)->name('banco');
 Route::get('/events', Events::class)->name('events');
 Route::get('/forms', Forms::class)->name('forms');
+
+Route::get('/loading', Loading::class)->name('loading');
 
 require __DIR__ . '/auth.php';
