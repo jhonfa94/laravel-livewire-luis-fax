@@ -5,6 +5,7 @@ use App\Http\Livewire\Banco;
 use App\Http\Livewire\Events;
 use App\Http\Livewire\Inline;
 use App\Http\Livewire\Actions;
+use App\Http\Livewire\Crud;
 use App\Http\Livewire\FullPage;
 use App\Http\Livewire\Properties;
 use App\Http\Livewire\Databinding;
@@ -41,5 +42,7 @@ Route::get('/events', Events::class)->name('events');
 Route::get('/forms', Forms::class)->name('forms');
 
 Route::get('/loading', Loading::class)->name('loading');
+
+Route::get('/crud', Crud::class)->name('crud');
 
 require __DIR__ . '/auth.php';
